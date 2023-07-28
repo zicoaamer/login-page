@@ -1,0 +1,133 @@
+/*Start Global Rules*/
+:root{
+    --main-color:#F6B253;
+    --sec-color:#333;
+}
+
+@font-face {
+    font-family: Prompt;
+    src: url(../Fonts/Prompt-Regular.ttf);
+}
+@font-face {
+    font-family: PromptBold;
+    src: url(../Fonts/Prompt-Bold.ttf);
+}
+@font-face {
+    font-family: PromptExBold;
+    src: url(../Fonts/Prompt-ExtraBold.ttf);
+}
+
+.w-15{
+    width: 15% !important;
+}
+body{
+    font-family: 'Prompt', sans-serif;
+    background-image: linear-gradient(to right ,var(--sec-color) 50% , var(--main-color) 50%);
+    color: black;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+
+/*End Global Rules*/
+/*Start homePage*/
+
+.homePage .welcome .box {
+    position: relative;
+    background-color: #2b2b2b;
+    color: rgba(255, 255, 255, 0.85) !important;
+    padding: 15px;
+    margin: 0;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.homePage .welcome .box::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    left:0px;
+    top: 0;
+    background-color: var(--main-color);
+}
+.homePage .features span{
+    color: var(--main-color) !important;
+    font-weight: bold;
+}
+.homePage .features span:last-child{
+    color: #000 !important;
+
+}
+.homePage .features .container{
+    position: relative;
+    border: 2px solid transparent;
+    border-left: none;
+    border-radius: 5px;
+    border-right: none;
+    box-shadow: 0px 0px 10px var(--main-color) , 0px 0px 10px var(--sec-color);
+}
+.homePage .features .container::before{
+    content: 'NOTE';
+    position: absolute;
+    background-color: var(--main-color);
+    font-weight: bolder;
+    padding: 5px 10px ;
+    color: #000;
+    border-radius: 3px;
+    top: -20px;
+    left: 20px;
+
+}
+.homePage .play .container::before{
+    content: "PLAY";
+}   
+.homePage .play .btn-outline-warning {
+    --bs-btn-color: var(--main-color) ;
+    --bs-btn-border-color:  var(--main-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:  var(--main-color);
+    --bs-btn-hover-border-color: var(--main-color);
+    --bs-btn-active-bg:var(--main-color);
+    --bs-btn-active-border-color:var(--main-color);
+}
+.homePage .play .btn-outline-dark {
+    --bs-btn-color: var(--sec-color) ;
+    --bs-btn-border-color:  var(--sec-color);
+    --bs-btn-hover-bg:  var(--sec-color);
+    --bs-btn-hover-border-color: var(--sec-color);
+    --bs-btn-active-bg:var(--sec-color);
+    --bs-btn-active-border-color:var(--sec-color);
+}
+
+/*End homePage*/
+/*Start Login Page*/
+
+.login main , .signUp main {
+    height: 100vh;
+}
+.box-login{
+    padding: 50px;
+    box-shadow: 0px 0px 10px var(--main-color) , 0px 0px 10px var(--sec-color);
+
+}
+.login .login-btn , .signUp .sign-btn {
+    font-weight: bolder;
+    --bs-btn-color: whitesmoke ;
+    --bs-btn-border-color:  black;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg:  #2b2b2b;
+    --bs-btn-hover-border-color: #2b2b2b;
+    --bs-btn-active-bg:var(--sec-color);
+    --bs-btn-active-border-color:var(--sec-color);
+}
+.inputs .row > p span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

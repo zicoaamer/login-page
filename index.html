@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="icon" href="Images/icon.png">
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="Css/main.css">
+    <!-- Bootstrap Css File -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="homePage hide">
+      <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+        <div class="container px-5">
+          <a class="navbar-brand" href="#"><img src="imgs/zico-login-rm.png" class="w-15" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link log-out" href="#">Log Out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <div class="welcome mt-5 pt-5">
+            <div class="container  d-flex align-items-center justify-content-center">
+                <div class="box">
+                  <p class="box-header fs-3 m-0 fw-bold capitalize">Welcome...</p>
+                </div>
+            </div>
+        </div>
+        <div class="features mt-5">
+          <div class="container text-center p-3">
+            <p class=" text-black-50 m-0 fs-5 fw-bold">
+              This website has been made by <span>hazem aamer</span> to show the power of javaScript language, and to make the challenge more tasty,<br>
+              he's made it with only single html page behind the scences but in front of the user they are 3 pages :)
+              <span>see</span> you in next spicy challenges.
+            </p>
+          </div>
+        </div>
+        <div class="features play mt-5">
+          <div class="container text-center p-3">
+            <div class="d-flex justify-content-around">
+              <button class="changeLeft btn btn-outline-warning">Change Color</button>
+              <button class="reset btn btn-outline-danger">Reset Color</button>
+              <button class="changeRight btn btn-outline-dark">Change Color</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="login show">
+      <main>
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+          <div class="box-login">
+            <h2 class="text-white text-center">Creative Login Page</h2>
+            <div class="inputs g-3">
+              <div class="row mt-3"><input id="loginMail" class="form-control" type="email" placeholder="Name@example.com"></div>
+              <p class="text-danger warningMail pt-1"></p>
+              <div class="row mt-3"><input id="loginPass" class="form-control" type="password" placeholder="Password"></div>
+              <p class="text-danger warningPass pt-1"></p>
+              <div class="row mt-3"><button class="login-btn btn btn-outline-info ">Login</button></div>
+              <div class="row"><p class="m-0 pt-3 text-white-50">Don't have an account? <span class="text-white sign-page">Sign up</span></p></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="signUp hide">
+      <main>
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+          <div class="box-login">
+            <h2 class="text-white text-center">Sign Up Page</h2>
+            <div class="inputs g-3">
+              <div class="row justify-content-between mt-4">
+                <div class="col p-0">
+                  <input id="signFirstName" type="text" class="form-control"  placeholder="First Name">
+                </div>
+                <div class="col p-0 ps-4">
+                  <input id="signLastName" type="text" class="form-control"  placeholder="Last name"></div>
+                </div>
+                <p class="text-danger warningText pt-1"></p>
+              <div class="row mt-3"><input id="signMail" class="form-control" type="email" placeholder="Name@example.com"></div>
+              <p class="text-danger warningMail pt-1"></p>
+              <div class="row mt-3"><input id="signPass" class="form-control" type="password" placeholder="Password"></div>
+              <div class="row mt-3"><button class="sign-btn btn btn-outline-info ">Sign up</button></div>
+              <div class="row"><p class="m-0 pt-3 text-white-50">Do you have an account? <span class="text-white login-page">Login here</span></p></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Bootstrap Js File -->
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <!-- Main Js File -->
+    <script src="Js/main.js"></script>
+</body>
+</html>
